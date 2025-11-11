@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Madina Experience by Ali Murtaza</title>
   <style>
+    /* Reset and basic styles */
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
@@ -12,64 +13,65 @@
       background: #f8f9fa;
       color: #333;
     }
-    
+
+    /* Header with background image */
     header {
-      background: linear-gradient(to header {
-  background: url('mosq.jpg') no-repeat center center;
-  background-size: cover; /* poora header cover ho */
-  color: white;
-  text-align: center;
-  padding: 50px 20px;
-  border-radius: 0 0 12px 12px; /* optional */
-  position: relative;
-}
-
-/* Optional overlay to make text readable */
-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.4); /* dark overlay */
-  z-index: 0;
-}
-
-header h1, header p {
-  position: relative;
-  z-index: 1;
-}right, #007b5e, #17a2b8);
-      color: white;
+      position: relative;
+      background-image: url('mosq.jpg'); /* Same folder me image */
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      height: 350px;
       text-align: center;
       padding: 50px 20px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 0 0 12px 12px;
     }
-    header h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
+
+    /* Overlay for readability */
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.4);
+      z-index: 0;
+      border-radius: 0 0 12px 12px;
     }
-    header p {
-      font-size: 1.1em;
-      opacity: 0.9;
+
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+      margin: 5px 0;
     }
+
+    /* Sections */
     section {
       padding: 40px 20px;
       max-width: 900px;
-      margin: auto;
+      margin: 20px auto;
       background: white;
-      margin-bottom: 20px;
       border-radius: 12px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
+
     h2 {
       color: #007b5e;
       border-bottom: 2px solid #17a2b8;
       display: inline-block;
       margin-bottom: 15px;
     }
+
     ul {
       line-height: 1.8em;
     }
+
+    /* WhatsApp Button */
     .whatsapp-btn {
       display: block;
       width: fit-content;
@@ -82,9 +84,12 @@ header h1, header p {
       border-radius: 50px;
       transition: 0.3s;
     }
+
     .whatsapp-btn:hover {
       background: #1da851;
     }
+
+    /* Footer */
     footer {
       background: #007b5e;
       color: white;
@@ -92,6 +97,8 @@ header h1, header p {
       padding: 20px;
       font-size: 0.9em;
     }
+
+    /* Responsive */
     @media (max-width: 600px) {
       header h1 { font-size: 1.6em; }
       section { padding: 25px 15px; }
